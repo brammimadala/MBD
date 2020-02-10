@@ -1,0 +1,206 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bankName_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Bank Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bankBranch_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Bank Branch"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/bankName_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ac_holderName_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="A/C Holder Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/bankBranch_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountNumber_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="A/C Number"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/ac_holderName_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ifsc_code_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="IFSC Code"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/accountNumber_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintTop_toTopOf="@id/bankName_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintTop_toTopOf="@id/bankBranch_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintTop_toTopOf="@id/ac_holderName_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintTop_toTopOf="@id/accountNumber_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/guidelineCenter_one"
+            app:layout_constraintTop_toTopOf="@id/ifsc_code_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bankName_cs_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="SBI"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenter_two"
+            app:layout_constraintTop_toTopOf="@id/bankName_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bankBranch_cs_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Ongole"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenter_two"
+            app:layout_constraintTop_toTopOf="@id/bankBranch_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ac_holderName_cs_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="BRAHMAM MADALA"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenter_two"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@id/ac_holderName_cs"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountNumber_cs_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="20181341921"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenter_two"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@id/accountNumber_cs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ifsc_code_cs_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="SBIN 0008999"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/guidelineCenter_two"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@id/ifsc_code_cs" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenter_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenter_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
